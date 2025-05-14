@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasilitas Marriot Hotel </title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <style>
+        .facility-section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        .facility-section h1 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .facility-item {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .facility-item:nth-child(odd) .facility-image-container {
+            order: 1;
+            padding-right: 20px;
+        }
+
+        .facility-item:nth-child(odd) .facility-text {
+            order: 2;
+            padding-left: 20px;
+        }
+
+        .facility-item:nth-child(even) .facility-image-container {
+            order: 2;
+            padding-left: 20px;
+            text-align: right;
+        }
+
+        .facility-item:nth-child(even) .facility-text {
+            order: 1;
+            padding-right: 20px;
+        }
+
+        .facility-image-container {
+            flex: 1 1 40%;
+            /* Adjust the percentage as needed */
+            min-width: 300px;
+            /* Minimum width for the image */
+        }
+
+        .facility-image {
+            width: 100%;
+            max-height: 400px;
+            /* Increased height for better display */
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow for depth */
+        }
+
+        .facility-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            /* Ensure images cover the area */
+        }
+
+        .facility-text {
+            flex: 1 1 60%;
+            /* Adjust the percentage as needed */
+            min-width: 300px;
+            /* Minimum width for the text */
+        }
+
+        .facility-text h2 {
+            margin-top: 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        /* Style untuk restoran (jika ingin dibedakan) */
+        .restaurant-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .restaurant-list li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu">
+        <label>MARRIOT HOTEL </label>
+        <ul>
+            <li><a href="HOTEL.html">Home</a></li>
+            <li><a href="#">Tentang kami</a>
+                <ul class="dropdown">
+                    <li><a href="Profile.html">Profile</a></li>
+                    <li><a href="Restoran.html">Restoran</a></li>
+                    <li class="active"><a href="Fasilitas.html">Fasilitas</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </li>
+            <li><a href="Kamar.html">Kamar</a></li>
+            <li><a href="Meeting.html">Meeting/Event</a></li>
+            <li><a href="Lokasi.html">Lokasi</a></li>
+            <li><a href="Profile saya.html">Profile saya</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="facility-section">
+            <h1>Fasilitas Marriot Hotel</h1>
+            <p>
+                Marriot Hotel menawarkan berbagai fasilitas meliputi kolam renang outdoor, bar/lounge, dan pusat kebugaran 24 jam.
+                Selain itu, Anda dapat mengunjungi spa untuk memanjakan diri dengan pijat atau perawatan tubuh, dan Goji Kitchen+Bar, salah satu 2 restoran, yang menyajikan masakan internasional serta buka untuk sarapan dan makan malam.  
+            </p>
+        </section>
+
+        <section class="facility-section">
+            <div class="facility-item">
+                <div class="facility-image-container">
+                    <div class="facility-image">
+                        <img src="img/kolam_renang.jpg" alt="Kolam Renang Indoor">
+                    </div>
+                </div>
+                <div class="facility-text">
+                    <h2>Kolam Renang </h2>
+                    <p>
+                        Bersantai dan segarkan diri Anda di kolam renang indoor kami yang luas dan nyaman.
+                        Dengan air tawar yang jernih dan suasana yang menenangkan, ini adalah tempat yang sempurna untuk melepas penat.
+                    </p>
+                </div>
+            </div>
+
+            <div class="facility-item">
+                <div class="facility-image-container">
+                    <div class="facility-image">
+                        <img src="img/spa.jpg" alt="Spa">
+                    </div>
+                </div>
+                <div class="facility-text">
+                    <h2>Spa</h2>
+                    <p>
+                        Manjakan diri Anda dengan berbagai perawatan tubuh dan kecantikan yang menenangkan di Adorabella Spa & Salon.
+                        Terapis kami yang berpengalaman akan membantu Anda merasa segar dan berenergi kembali.
+                    </p>
+                </div>
+            </div>
+
+            <div class="facility-item">
+                <div class="facility-image-container">
+                    <div class="facility-image">
+                        <img src="img/gym.jpg" alt="Pusat Kebugaran">
+                    </div>
+                </div>
+                <div class="facility-text">
+                    <h2>Pusat Kebugaran</h2>
+                    <p>
+                        Tetap bugar dan sehat selama Anda menginap di pusat kebugaran kami yang dilengkapi dengan peralatan modern.
+                        Instruktur kami yang profesional siap membantu Anda mencapai tujuan kebugaran Anda.
+                    </p>
+                </div>
+            </div>
+
+            <div class="facility-item">
+                <div class="facility-image-container">
+                    <div class="facility-image">
+                        <img src="img/goji.jpg" alt="Bar">
+                    </div>
+                </div>
+                <div class="facility-text">
+                    <h2>Bar</h2>
+                    <p>
+                        Lepaskan ketegangan dan nikmati relaksasi yang mendalam di sauna dan jacuzzi kami.
+                        Fasilitas ini dirancang untuk membantu Anda meremajakan tubuh dan pikiran.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="facility-section">
+            <h2>Restoran & Lounge</h2>
+            <p>Hotel Pacific juga menawarkan beragam pilihan tempat makan dan bersantai yang memanjakan selera Anda:</p>
+            <ul class="restaurant-list">
+                <li><b>Athena Restaurant:</b> Menyajikan hidangan Asia dan Barat yang lezat dalam suasana yang elegan.</li>
+                <li><b>Golden Palace Restaurant:</b> Menawarkan masakan Tionghoa autentik dengan dim sum yang menggugah selera.</li>
+                <li><b>Neptune Lounge:</b> Tempat yang sempurna untuk bersantai dengan koktail dan hiburan musik live.</li>
+                <li><b>Make Up The Dessert Boat:</b> Nikmati berbagai pilihan dessert yang menggoda dalam konsep yang unik.</li>
+                <li><b>Another Side of the Buffet:</b> Area buffet tambahan dengan variasi hidangan untuk pengalaman bersantap yang tak terlupakan.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
